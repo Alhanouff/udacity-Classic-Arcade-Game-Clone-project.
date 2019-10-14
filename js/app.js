@@ -85,6 +85,11 @@ enemyLocation.forEach(function (locationY) {
 });
 
     var player = new Player(202, 405);
+
+
+
+// This listens for key presses and sends the keys to your
+// Player.handleInput() method. 
     
     document.addEventListener('keyup', function (e) {
     var allowedKeys = {
