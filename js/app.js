@@ -40,18 +40,29 @@ if (this.x > 510) {
         player.y = 405;
     };
 };
+
+// Renders the enemy into the game
 Enemy.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
+
+// Player class focusing on x and y axis
 var Player = function (x, y) {
-this.x = x;
+    
+    
+    // Variables for the player to move along x and y axis 
+    this.x = x;
     this.y = y;
+    
+    
+    //The image of the player of horn-girl is added to the playing field 
      this.player = 'images/char-boy.png';
 };
 
 Player.prototype.update = function (dt) {
 
 };
+// Renders the image of the user into the game
 Player.prototype.render = function () {
     ctx.drawImage(Resources.get(this.player), this.x, this.y);
 };
