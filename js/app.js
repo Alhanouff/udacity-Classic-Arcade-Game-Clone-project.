@@ -1,3 +1,6 @@
+
+// Define Settings
+
 let settings = {
     debug: false,
     pause: false,
@@ -7,6 +10,8 @@ let settings = {
         2: "red"     // colliding (on player's line and colliding)
     }
 };
+
+// Define dimensions in game
 let colWidth = 101;
 let rowHeight = 83;
 let tileSize = 83;
@@ -15,7 +20,11 @@ let numRows = 6;
 let entityWidth = 101;
 let entityHeight = 170;
 
+
+//Enemies our player must avoid
+
 let Enemy = function (x, y, speed) {
+  //The following variables are used to determine the x and y axis and speed of the enemy
 this.x = x;
         this.y = y;
         this.speed = speed;
