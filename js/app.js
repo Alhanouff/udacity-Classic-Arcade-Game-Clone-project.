@@ -20,17 +20,24 @@ this.x = x;
         this.y = y;
         this.speed = speed;
         
-        
+  // The image of the enemy of cockroach that is added to the playing field        
          this.sprite = 'images/enemy-bug.png';
     };
-    Enemy.prototype.update = function (dt) {
-    this.x += this.speed * dt;
+ //Update the enemy's position, required method for game
+    //Parameter: dt, a time delta between ticks
 
+
+
+
+    Enemy.prototype.update = function (dt) {
+   //Multiplies the speed by the dt parameter on the x axis
+    this.x += this.speed * dt;
+// Once enemies are off the canvas, they reappear randomly with different speeds
 if (this.x > 510) {
         this.x = -50;
         this.speed = 100 + Math.floor(Math.random() * 222);
     };
-    
+    //Checks for collisions between the player and the enemies
     
     if (player.x < this.x + 80 &&
         player.x + 80 > this.x &&
