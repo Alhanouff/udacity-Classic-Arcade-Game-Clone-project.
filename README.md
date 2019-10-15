@@ -25,7 +25,6 @@ the road into the water, while avoiding enemies crossing the road.
 When the player succeeds, or when the player has been hit by one of the
 enemies, the game will be reset to the initial state.
 
-You can try the game at the [GitHub Page](http://swesterveld.github.io/udacity-nd001-p3-classic-arcade-game-clone/)
 
 ## Languages or Tools used
 
@@ -42,4 +41,3 @@ You can try the game at the [GitHub Page](http://swesterveld.github.io/udacity-n
 When the game is both on pause and in visual debug mode, the JavaScript
 debugger will be activated.
 
-Happy playing! :)
